@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a cited guide for each, a roadmap to the platinum, missable flags, and a checklist that saves in your browser.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Offline guide &amp; tracker</p>
+  <h1>Leonida Trophy Atlas</h1>
+  <p class="sub">Every one of the 55 trophies, with its official name, description and grade, a guide in our own words that names its source, a roadmap to the platinum, and a checklist that saves in your browser. No online trophies. About 200 hours to the platinum.</p>
+  <div class="stats" id="stats" aria-label="Trophy totals"></div>
+  <div class="progress-wrap">
+    <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><div id="progressFill"></div></div>
+    <p class="progress-note" id="progressNote">Tick a trophy off and it stays ticked. Your progress never leaves this browser.</p>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Tracker controls">
+    <div class="toolbar-row">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Trophy, mission, place, word in a guide&hellip;" autocomplete="off"></label>
+      <label class="grade-label">Grade
+        <select id="grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="spoiler-label"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+    </div>
+    <div class="toolbar-row">
+      <div class="kind-filters" id="kindFilters" role="group" aria-label="Filter by kind"></div>
+      <div class="file-actions">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+        <button id="resetBtn" type="button">Reset all ticks</button>
+      </div>
+    </div>
+    <p class="toolbar-note" id="filterNote"></p>
+  </section>
+
+  <section class="missable" id="missableBanner" aria-label="Missable warning">
+    <h2>One trophy can be missed</h2>
+    <p><strong>Positive Mental Attitude</strong> (meditate at every spot) is the only trophy any guide flags as potentially missable. In Chapter 1, after the mission Down to Earth, talk to Lucia in the kitchen in the morning: she says she is going to meditate and walks to the balcony. Follow her and choose <em>Accept</em>. That meditation is gone after Chapter 1, and it is unconfirmed whether the trophy needs it, so do it to be safe. There is no mission replay, so keep a manual save at the start of every chapter. <span class="cite">Source: PowerPyx, GTA 6 Trophy Guide &amp; Roadmap.</span></p>
+  </section>
+
+  <section class="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-intro">Eight stages, in order. The story first, then the side characters, then the map and the grind. The 100% checklist only opens after the story, but progress made during it already counts.</p>
+    <ol class="stages" id="stages"></ol>
+  </section>
+
+  <section class="list-section" aria-label="Trophy checklist">
+    <h2 id="listHeading">The 55 trophies</h2>
+    <p class="section-intro" id="listIntro">Official names, descriptions and grades as PlayStation publishes them. Each guide is written for this atlas and names the source beside it. Five trophies have no confirmed method yet at launch: their guides say so plainly instead of guessing.</p>
+    <div id="emptyState" class="empty" hidden>
+      <p><strong>No trophies match these filters.</strong></p>
+      <p id="emptyText"></p>
+    </div>
+    <ul class="trophy-list" id="trophyList"></ul>
+  </section>
+</main>
+
+<footer>
+  <h2>Sources &amp; method</h2>
+  <p>Official trophy names, descriptions and grades are as listed by Exophase and PSNProfiles on 18 November 2026 (55 trophies: 1 platinum, 2 gold, 6 silver, 46 bronze; 28 hidden). Every guide is written in our own words for this atlas and cites its source beside it, chiefly PowerPyx&rsquo;s GTA 6 Trophy Guide &amp; Roadmap, cross-checked against the lists at Of Zen and Computing, Output Lag, GTA Zone, GTA Vice City Hub, KeenGamer, Leonida Intel, Insider Gaming and EGamers. Where no guide had confirmed a method at launch, the guide says so. This atlas works with the network off: it loads nothing from outside its own files, and your checklist is stored only in this browser.</p>
+  <p class="fine">An unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive; this atlas uses no Rockstar logo, artwork or game screenshots.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
